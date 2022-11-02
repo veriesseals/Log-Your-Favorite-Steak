@@ -1,3 +1,29 @@
 * {
     outline: 1px dotted red;
 }
+
+/* ------------------------------------ */
+body{
+    background-color: rgb(47, 46, 46);
+}
+
+form {
+    background-color: whitesmoke;
+}
+
+label {
+    color: whitesmoke;
+}
+
+#steakCardsTitle{
+    color:whitesmoke;
+}
+
+#headerTitle {
+    color:whitesmoke;
+    padding-top: 15px;
+}
+
+#copyRight {
+    color:whitesmoke;
+}
