@@ -1,14 +1,15 @@
-* {
+/* * {
     outline: 1px dotted red;
-}
+} */
 
 /* ------------------------------------ */
+
 body{
     background-color: rgb(47, 46, 46);
 }
 
 form {
-    background-color: whitesmoke;
+    background-color: rgb(47, 46, 46);
 }
 
 label {
@@ -26,4 +27,10 @@ label {
 
 #copyRight {
     color:whitesmoke;
+}
+
+/* --------------------------------------- */
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

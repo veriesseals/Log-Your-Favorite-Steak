@@ -38,13 +38,13 @@
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="firstName" class="form-label">What's Your First Name?</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="Please type your first name">
+                                <input type="text" class="form-control" id="firstName" value="" placeholder="Please type your first name">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="lastName" class="form-label">What's Your Last Name?</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Please type your last name">
+                                <input type="text" class="form-control" id="lastName" value="" placeholder="Please type your last name">
                             </div>
                         </div>
                     </div>
@@ -52,31 +52,29 @@
                     <!-- Section Email and Restaurant -->
                     <div class="row">
                         <!-- Enter your Email -->
-                        <div class="col-md-8">
+                        <div class="col-md-5">
                             <div class="input-group mb-3">
-                                <input type="email" class="form-control" placeholder="Enter Steak Lovers Email 😍" aria-label="Steak Lovers email" aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                <input type="email" class="form-control" placeholder="Enter Steak Lovers Email" aria-label="Steak Lovers email" aria-describedby="basic-addon2" id="steakLoversEmail" value="">
+                                <span class="input-group-text">@example.com</span>
                             </div>
                         </div>
 
                         <!-- Pick your favorite Restuarant -->
-                        <div class="col-md-4 d-flex justify-content-end">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Pick your favorite top 10 Restuarant
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Baires Grill Las Olas</a></li>
-                                  <li><a class="dropdown-item" href="#">Morton's The Steakhouse</a></li>
-                                  <li><a class="dropdown-item" href="#">Fleming's Prime Steakhouse</a></li>
-                                  <li><a class="dropdown-item" href="#">StripSteak by Micheal Mina</a></li>
-                                  <li><a class="dropdown-item" href="#">Edge Steak and Bar</a></li>
-                                  <li><a class="dropdown-item" href="#">Ruth's Chris Steakhouse</a></li>
-                                  <li><a class="dropdown-item" href="#">STK Steakhouse</a></li>
-                                  <li><a class="dropdown-item" href="#">The Capital Grille</a></li>
-                                  <li><a class="dropdown-item" href="#">RED South Beach</a></li>
-                                  <li><a class="dropdown-item" href="#">Ole Ole Steak House</a></li>
-                                </ul>
+                        <div class="col-md-7">
+                            <div class="dropdown" id="restuarant-group">
+                                <label for="restuarant">Pick your favorite top 10 Restuarant:</label>
+                                <select id="restuarant">
+                                    <option value="bairesGrill">Baires Grill Las Olas</option>
+                                    <option value="mortonsTheSteakHouse">Morton's The Steakhouse</option>
+                                    <option value="flemingsPrimeSteakhouse">Fleming's Prime Steakhouse</option>
+                                    <option value="stripSteak">StripSteak by Micheal Mina</option>
+                                    <option value="edgeSteakBar">Edge Steak and Bar</option>
+                                    <option value="ruthsChris">Ruth's Chris Steakhouse</option>
+                                    <option value="stkSteakHouse">STK Steakhouse</option>
+                                    <option value="theCaptialGrille">The Capital Grille</option>
+                                    <option value="redSouthBeach">RED South Beach</option>
+                                    <option value="oleOleSteakHouse">Ole Ole Steak House</option>
+                                </select>
                               </div>
                         </div>
                     </div>
@@ -87,25 +85,23 @@
                         </div>
                     </section>
 
+                    Favorite Steak
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="formFile" class="form-label">Select your favorite steak below:</label>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Pick your favorite steak
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Flank</a></li>
-                                  <li><a class="dropdown-item" href="#">New York Strip</a></li>
-                                  <li><a class="dropdown-item" href="#">Skirt</a></li>
-                                  <li><a class="dropdown-item" href="#">Ribeye</a></li>
-                                  <li><a class="dropdown-item" href="#">Prime Rib</a></li>
-                                  <li><a class="dropdown-item" href="#">Tenderloin</a></li>
-                                  <li><a class="dropdown-item" href="#">Sirloin</a></li>
-                                  <li><a class="dropdown-item" href="#">Porterhouse</a></li>
-                                  <li><a class="dropdown-item" href="#">T-Bone</a></li>
-                                  <li><a class="dropdown-item" href="#">Filet Mignon</a></li>
-                                </ul>
+                            <div class="dropdown" id="steak-group">
+                                <label for="steak">Select your favorite steak:</label>
+                                <select id="steak">
+                                    <option value="flankSteak">Flank Steak</option>
+                                    <option value="newYorkStripSteak">New York Strip</option>
+                                    <option value="skirtSteak">Skirt Steak</option>
+                                    <option value="ribeyeSteak">Ribeye Steak</option>
+                                    <option value="primeRibSteak">Prime Rib</option>
+                                    <option value="tenderloinSteak">Tenderloin Steak</option>
+                                    <option value="sirloinSteak">Sirloin</option>
+                                    <option value="porterHouseSteak">The Capital Grille</option>
+                                    <option value="tBoneSteak">RED South Beach</option>
+                                    <option value="filetMignonSteak">Ole Ole Steak House</option>
+                                </select>
                               </div>
                         </div>
 
@@ -171,7 +167,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <h5 id="copyRight">Log Your Favorite Steak. Copyright 2022 &copy; Developed by Veries Seals III</h5>
