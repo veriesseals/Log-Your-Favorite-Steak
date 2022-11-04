@@ -106,11 +106,13 @@
                         </div>
 
                         <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Share and upload your own steak:</label>
-                                <input class="form-control" type="file" id="formFile">
-                              </div>
+                            <div class="row">
+                                <label for="inputImage">Enter Image URL</label>
+                                <input type="url" id="inputImage" name="inputImage" value="" placeholder="Enter Image URL">
+                            </div>
                         </div>
+
+                        
                     </div>
                     
                     <!-- Button -->
@@ -133,35 +135,28 @@
                 <div class="row">
                     <h2 id="steakCardsTitle">Steak Cards</h2>
                 </div>
+            </div>
+        </section>
 
-                <!-- Card -->
-                <section class="container">
-                    <div class="row" id="cardDisplay">
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="..." class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h2 class="card-title"></h2>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"></p>
-                                  <p class="card-text"><small class="text-muted"></small></p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+        <!-- Card -->
+        <section class="container">
+            <div class="row" id="steakCardDisplay">
+                <!-- <div class="card mb-3">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="${this.show.inputImage}" class="img-fluid rounded-start" alt="...">
                     </div>
-                </section>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h2 class="card-title">${this.favChoice.steak}</h2>
+                        <p class="card-text">${this.favChoice.firstName}</p>
+                        <p class="card-text">${this.favChoice.lastName}</p>
+                        <p class="card-text">${this.favChoice.email}</p>
+                        <p class="card-text">${this.favChoice.restuarant}</p>
+                        </div>
+                    </div>
+                    </div>
+                </div> -->
             </div>
         </section>
     </main>

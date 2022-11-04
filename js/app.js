@@ -36,7 +36,7 @@ displayData(e){
         let steakLoversEmail = document.getElementById('steakLoversEmail').value;
         let restuarant = document.getElementById('restuarant').value;
         let steak = document.getElementById('steak').value;
-        let inputImage = document.getElementById('image').value;
+        let inputImage = document.getElementById('inputImage').value;
 
 
         this.favChoice = {
@@ -50,7 +50,27 @@ displayData(e){
 
         console.log(this.favChoice);
 
+        let steakCardDisplay = document.getElementById('steakCardDisplay');
+        steakCardDisplay.innerHTML += `
+                    <div class="card mb-3">
+                            <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="${this.favChoice.image}" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                <h2 class="card-title">${this.favChoice.steak}</h2>
+                                <p class="card-text">${this.favChoice.fName}</p>
+                                <p class="card-text">${this.favChoice.lName}</p>
+                                <p class="card-text">${this.favChoice.email}</p>
+                                <p class="card-text">${this.favChoice.restuarant}</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                `
     }
+
 
 }
 
