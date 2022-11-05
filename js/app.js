@@ -60,10 +60,10 @@ displayData(e){
                             <div class="col-md-8">
                                 <div class="card-body">
                                 <h2 class="card-title">${this.favChoice.steak}</h2>
-                                <p class="card-text">${this.favChoice.fName}</p>
-                                <p class="card-text">${this.favChoice.lName}</p>
-                                <p class="card-text">${this.favChoice.email}</p>
-                                <p class="card-text">${this.favChoice.restuarant}</p>
+                                <p class="card-text">${'First Name: ' + this.favChoice.fName}</p>
+                                <p class="card-text">${'Last Name: ' + this.favChoice.lName}</p>
+                                <p class="card-text">${'Email: ' + this.favChoice.email}</p>
+                                <p class="card-text">${this.favChoice.restuarant + ' is my favorite Top 10 Steak Restuarant!'}</p>
                                 </div>
                             </div>
                             </div>
